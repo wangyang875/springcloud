@@ -4,7 +4,9 @@ eureka:
   instance:
     hostname: peer1
   client:
-    register-with-eureka: false
-    fetch-registry: false
+    register-with-eureka: true
+    fetch-registry: true
     service-url:
      defaultZone: http://peer2:8084/eureka/
+  server:
+    enable-self-preservation: false
